@@ -1,7 +1,15 @@
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
+  background: url('./nate-greno-aIpJEcdLdoo-unsplash.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #645742;
+  font-family: 'Brush Script MT';
+  text-align: center;
+  font-size: 4rem;
 }
 
 body,html {
@@ -10,16 +18,23 @@ body,html {
   font-family: sans-serif;
 }
 
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
+.container {
+  display: grid ;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 60% 20% 10%;
+  min-height: 90vh;
+  grid-gap: 10px;
+  padding: 10px;
   align-items: center;
-  justify-content: center;
+}
+
+.keys {
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #3f5c4f;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -28,14 +43,16 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  background: rgba(79, 63, 92,0.4);
+  text-shadow: 0 0 .5rem #3f5c4f;
+  display: inline-block;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #4f3f5c;
+  border-width: thick;
+  box-shadow: 0 0 1rem #4f3f5c;
 }
 
 kbd {
@@ -47,5 +64,30 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #94c4d6;
+}
+
+.log{
+  align-items: center;
+  text-align: center;
+}
+
+button{
+  width:120px;
+  height:40px;
+  background: linear-gradient(to left top, #4f3f5c 15%, #3f5c4f 70%,  #4f3f5c 15%);
+  border-style: none;
+  color:#fff;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+  transition: all .5s;
+}
+
+button:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
 }
