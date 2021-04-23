@@ -10,6 +10,12 @@ HTML, CSS and JavaScript.
 * Changed HTML Structures.
 * Save and Doenload the Melody.
 
+## Screenshots
+<img src="drum-kit-after.PNG" alt="alt drum-kit-after" width="60" height="60">
+<img src="drum-kit-before.PNG" alt="drum-kit-before" width="60" height="60">
+
+![drum-kit-after](./drum-kit-after.PNG)
+![drum-kit-before](./drum-kit-before.PNG)
 
 ## Useful Links
 * [Key Code Info](http://keycode.info/).
