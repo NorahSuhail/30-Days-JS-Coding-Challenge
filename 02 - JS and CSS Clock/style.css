@@ -1,0 +1,129 @@
+html {
+    background: #018DED url(./sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3f522c;
+    font-family: 'Ink Free';
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+
+.container {
+    display: grid ;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    align-items: center;
+  }
+
+.clock {
+    position:relative;
+    width:30em;
+    height:30em;
+    margin:1em auto;
+    border:1em solid #756a6a;
+    border-radius:50%;
+    box-shadow:
+      inset 0.125em 0.25em 0.5em #ccc3c4,
+      -0.25em -0.5em 0.5em #FFFC,
+      0 0 0.0625em 0.5em #756a6a,
+      0 0 0.0625em 0.5625em #ccc3c4,
+      0.125em 0.25em 0.5em 0.5em #ccc3c4;
+  }
+
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+    align-items: center;
+  }
+  
+.hours{
+  display: grid ;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+  width: 100%;
+  border-radius:50%;
+}
+
+#hour-twelve{
+  position: relative;
+  float:right;
+  right: -10%;
+  font-family: 'Ink Free';
+  text-align: center;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+
+#hour-nine{
+  position: relative;
+  top: -10%;
+  float:left;
+  font-family: 'Ink Free';
+  text-align: center;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+
+#hour-three{
+  position: relative;
+  top: 90%;
+  float: right;
+  font-family: 'Ink Free';
+  text-align: center;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+
+#hour-six{
+  position: relative;
+  top: 90%;
+  float: left;
+  font-family: 'Ink Free';
+  text-align: center;
+  font-size: 2rem;
+  margin: -5%;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+
+
+  .hour-hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position:fixed;
+  }
+
+
+  .min-hand {
+    width: 50%;
+    height: 5px;
+    background: black;
+  }
+
+
+  .second-hand {
+    width: 50%;
+    height: 3px;
+    background: black;
+  }

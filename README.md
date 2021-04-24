@@ -12,6 +12,11 @@ _These small projects were built following the quidness of Was Bod tutorials
 HTML, CSS and JavaScript.
 
 
+## Useful Links
+* [Image Color Picker](https://imagecolorpicker.com/)
+* [Fonts Families](https://www.tutorialbrain.com/css_tutorial/css_font_family_list/)
+
+
 ## Author
 * [Wes Bos](https://github.com/wesbos).
 * Norah Suhail.
