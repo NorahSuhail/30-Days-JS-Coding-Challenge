@@ -1,5 +1,5 @@
 html {
-    background: #018DED url(./sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
+    background: #ffffff url(./sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
     background-size: cover;
     text-align: center;
     font-size: 10px;
@@ -17,9 +17,10 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     display: grid ;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 70% 10% 10%;
     align-items: center;
   }
+
 
 .clock {
     position:relative;
@@ -37,7 +38,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-  .clock-face {
+.clock:after {
+    background: #6b9c47;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:  6%;
+    height: 6%;
+    z-index: 10;
+  }
+
+
+.clock-face {
     position: relative;
     width: 100%;
     height: 100%;
@@ -45,57 +60,59 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
   
-.hours{
-  display: grid ;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  height: 100%;
-  width: 100%;
-  border-radius:50%;
-}
 
-#hour-twelve{
-  position: relative;
-  float:right;
-  right: -10%;
-  font-family: 'Ink Free';
-  text-align: center;
-  font-size: 2rem;
-  margin: 5%;
-}
+.hours {
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+    color:#6b9c47;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
 
 
-#hour-nine{
-  position: relative;
-  top: -10%;
-  float:left;
-  font-family: 'Ink Free';
-  text-align: center;
-  font-size: 2rem;
-  margin: 5%;
-}
+#hour-twelve {
+    position: relative;
+    float:right;
+    right: -10%;
+    font-family: 'Ink Free';
+    text-align: center;
+    margin: 5%;
+  }
 
 
-#hour-three{
-  position: relative;
-  top: 90%;
-  float: right;
-  font-family: 'Ink Free';
-  text-align: center;
-  font-size: 2rem;
-  margin: 5%;
-}
+#hour-nine {
+    position: relative;
+    top: -10%;
+    float:left;
+    font-family: 'Ink Free';
+    text-align: center;
+    margin: 5%;
+  }
 
 
-#hour-six{
-  position: relative;
-  top: 90%;
-  float: left;
-  font-family: 'Ink Free';
-  text-align: center;
-  font-size: 2rem;
-  margin: -5%;
-}
+#hour-three {
+    position: relative;
+    top: 90%;
+    float: right;
+    font-family: 'Ink Free';
+    text-align: center;
+    margin: 5%;
+  }
+
+
+#hour-six {
+    position: relative;
+    top: 85%;
+    float: left;
+    font-family: 'Ink Free';
+    text-align: center;
+    margin: -5%;
+  }
+
 
 .hand {
     position: absolute;
@@ -107,23 +124,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-  .hour-hand {
-    width: 50%;
-    height: 6px;
-    background: black;
-    position:fixed;
+.hour-hand {
+    background: #3f522c;
+    height: 20%;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
   }
 
 
-  .min-hand {
-    width: 50%;
-    height: 5px;
-    background: black;
+.min-hand {
+    background: #756a6a;
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
   }
 
 
-  .second-hand {
-    width: 50%;
-    height: 3px;
-    background: black;
+.second-hand {
+    background: #798f61;
+    height: 45%;
+    left: 50%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 8;
   }
